@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Windows",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/raylib/raylib-5.5/src"
+            ],
+            "defines": [
+                "DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/MinGw/64bits/mingw64/bin/gcc.exe",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

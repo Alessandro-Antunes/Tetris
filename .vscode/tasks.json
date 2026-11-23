@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Raylib",
+            "type": "process",
+            "command": "C:\\MinGw\\64bits\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "C:\\raylib\\raylib-5.5\\src",
+                "-L",
+                "C:\\raylib\\raylib-5.5\\src",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
